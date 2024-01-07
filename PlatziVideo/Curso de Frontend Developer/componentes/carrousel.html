@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=-1.0">
+ <title>Carrusel 1</title>
+</head>
+<style>
+ /* Globales */
+ body{
+  margin: 0px;
+ }
+
+ /* Estructura del carrusel */
+ section.carrousel{
+  width: 100%;
+  overflow: scroll;
+  padding: 30px;
+  position: relative;
+ }
+ div.carrousel__container{
+  white-space: nowrap;
+  margin: 70px 0px;
+  padding-bottom: 10px;
+ }
+ div.carrousel-item{
+  background-color: palevioletred;
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 450ms all;
+  transform-origin: center left;
+  position: relative;
+ }
+ div.carrousel-item:hover ~ div.carrousel-item{
+ transform: translate3d(100px, 0, 0);
+ }
+ div.carrousel__container:hover div.carrousel-item{
+  opacity: 0.3;
+ }
+ div.carrousel__container:hover div.carrousel-item:hover{
+  transform: scale(1.5);
+  opacity: 1;
+ }
+
+ /* Targetas del carrusel */
+ img.carrousel-item__img{
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+ }
+ div.carrousel-item__details{
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  font-size: 10px;
+  opacity: 0;
+  transition: 450ms opacity;
+  padding: 10px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+ }
+ div.carrousel-item__details:hover {
+    opacity: 1;
+}
+</style>
+<body>
+
+ <section class="carrousel">
+  <div class="carrousel__container">
+   
+   <div class="carrousel-item">
+    <img class="carrousel-item__img" src="https://images.pexels.com/photos/70746/strawberries-red-fruit-royalty-free-70746.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Fresas">
+    <div class="carrousel-item__details">
+     <div>
+     <img src="material/icons8-play-64.png" alt="play">
+     <img src="material/icons8-plus-64.png" alt="Plus">
+      <p class="carrousel-item__details--title">Título descriptivo</p>
+      <p class="carrousel-item__details--subtitle">2019 16+ 114 minutos</p>
+     </div>
+    </div>
+   </div>
+
+   <div class="carrousel-item">
+    <img class="carrousel-item__img" src="https://images.pexels.com/photos/693794/pexels-photo-693794.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Manzanas Verdes">
+    <div class="carrousel-item__details">
+     <div>
+     <img src="material/icons8-play-64.png" alt="play">
+     <img src="material/icons8-plus-64.png" alt="Plus">
+      <p class="carrousel-item__details--title">Título descriptivo</p>
+      <p class="carrousel-item__details--subtitle">2019 16+ 114 minutos</p>
+     </div>
+    </div>
+   </div>
+ 
+   <div class="carrousel-item">
+    <img class="carrousel-item__img" src="https://images.pexels.com/photos/1002778/pexels-photo-1002778.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Naranjas">
+    <div class="carrousel-item__details">
+     <div>
+     <img src="material/icons8-play-64.png" alt="play">
+     <img src="material/icons8-plus-64.png" alt="Plus">
+      <p class="carrousel-item__details--title">Título descriptivo</p>
+      <p class="carrousel-item__details--subtitle">2019 16+ 114 minutos</p>
+     </div>
+    </div>
+   </div>
+
+   <div class="carrousel-item">
+    <img class="carrousel-item__img" src="https://images.pexels.com/photos/760281/pexels-photo-760281.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Uvas">
+    <div class="carrousel-item__details">
+     <div>
+     <img src="material/icons8-play-64.png" alt="play">
+     <img src="material/icons8-plus-64.png" alt="Plus">
+      <p class="carrousel-item__details--title">Título descriptivo</p>
+      <p class="carrousel-item__details--subtitle">2019 16+ 114 minutos</p>
+     </div>
+    </div>
+   </div>
+
+   <div class="carrousel-item">
+    <img class="carrousel-item__img" src="https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Tomates">
+    <div class="carrousel-item__details">
+     <div>
+     <img src="material/icons8-play-64.png" alt="play">
+     <img src="material/icons8-plus-64.png" alt="Plus">
+      <p class="carrousel-item__details--title">Título descriptivo</p>
+      <p class="carrousel-item__details--subtitle">2019 16+ 114 minutos</p>
+     </div>
+    </div>
+   </div>
+
+   <div class="carrousel-item">
+    <img class="carrousel-item__img" src="https://images.pexels.com/photos/867349/pexels-photo-867349.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Kiwi">
+    <div class="carrousel-item__details">
+     <div>
+     <img src="material/icons8-play-64.png" alt="play">
+     <img src="material/icons8-plus-64.png" alt="Plus">
+      <p class="carrousel-item__details--title">Título descriptivo</p>
+      <p class="carrousel-item__details--subtitle">2019 16+ 114 minutos</p>
+     </div>
+    </div>
+   </div>
+  
+   <div class="carrousel-item">
+    <img class="carrousel-item__img" src="https://images.pexels.com/photos/2363347/pexels-photo-2363347.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="Lima">
+    <div class="carrousel-item__details">
+     <div>
+     <img src="material/icons8-play-64.png" alt="play">
+     <img src="material/icons8-plus-64.png" alt="Plus">
+      <p class="carrousel-item__details--title">Título descriptivo</p>
+      <p class="carrousel-item__details--subtitle">2019 16+ 114 minutos</p>
+     </div>
+    </div>
+   </div>
+
+  </div>
+ </section>
+ 
+</body>
+</html>
