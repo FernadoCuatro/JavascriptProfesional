@@ -1,0 +1,20 @@
+{
+  "name": "asincronismo",
+  "version": "1.0.0",
+  "description": "Trabajar con asincronismo en Js",
+  "main": "src/index.js",
+  "scripts": {
+    "callback": "node src/callback/indes.js",
+    "callback:challage": "node src/callback/challage.js"
+  },
+  "keywords": [
+    "callbacks",
+    "promise",
+    "async"
+  ],
+  "author": "Fernando Cuatro",
+  "license": "ISC",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
+}
